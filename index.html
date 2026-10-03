@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seduction & Élegance | Lencería & Perfumería</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes Elegantes y Legibles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Controladores en CSS Puro para el Carrito y Menú Móvil -->
+  <input type="checkbox" id="cart-toggle" class="cart-toggle-checkbox">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="header">
+    <div class="top-bar">
+      ✨ <span>Envío GRATIS</span> por compras superiores a $150.000 COP | Promociones de Temporada
+    </div>
+    <nav class="navbar container">
+      <label for="nav-toggle" class="nav-hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <a href="#" class="logo">
+        <span class="logo-title">SEDUCTION</span>
+        <span class="logo-sub">Lencería & Perfumería</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#promociones" class="highlight-link">Promociones</a></li>
+        <li><a href="#lenceria">Lencería</a></li>
+        <li><a href="#perfumeria">Perfumería</a></li>
+        <li><a href="#pagos">Métodos de Pago</a></li>
+      </ul>
+
+      <!-- Botón del Carrito -->
+      <label for="cart-toggle" class="cart-icon-btn" title="Ver Carrito">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-badge">2</span>
+      </label>
+    </nav>
+  </header>
+
+  <!-- DRAWER / PANEL LATERAL DEL CARRITO (CSS Puro) -->
+  <aside class="cart-drawer">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Tu Carrito de Selección</h3>
+      <label for="cart-toggle" class="cart-close">&times;</label>
+    </div>
+
+    <div class="cart-body">
+      <!-- Item 1 -->
+      <div class="cart-item">
+        <img src="https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=150&q=80" alt="Conjunto Encaje">
+        <div class="cart-item-info">
+          <h4>Conjunto Noir Seduction</h4>
+          <span class="cart-item-qty">Cantidad: 1</span>
+          <span class="cart-item-price">$119.900 COP</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=150&q=80" alt="Perfume Elixir">
+        <div class="cart-item-info">
+          <h4>Perfume Élan Velvet 100ml</h4>
+          <span class="cart-item-qty">Cantidad: 1</span>
+          <span class="cart-item-price">$185.000 COP</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total Estimado:</span>
+        <strong>$304.900 COP</strong>
+      </div>
+      
+      <div class="payment-badges-small">
+        <span>Aceptamos:</span>
+        <span class="badge-tag nequi">Nequi</span>
+        <span class="badge-tag davivienda">Davivienda</span>
+      </div>
+
+      <a href="https://wa.me/571234567895?text=Hola,%20quiero%20finalizar%20mi%20compra%20de%20lencer%C3%ADa%20y%20perfumer%C3%ADa" target="_blank" class="btn-checkout">
+        <i class="fab fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+      </a>
+    </div>
+  </aside>
+  <label for="cart-toggle" class="cart-overlay"></label>
+
+  <!-- BANNER PRINCIPAL (HERO) -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <span class="hero-subtitle">Frescura, Elegancia & Sensualidad</span>
+      <h1>Siente el lujo y la comodidad en tu piel</h1>
+      <p>Lencería fina y fragancias exclusivas diseñadas para elevar tu autoestima y celebrar tu belleza todos los días.</p>
+      <div class="hero-buttons">
+        <a href="#promociones" class="btn btn-primary">Ver Ofertas de Temporada</a>
+        <a href="#lenceria" class="btn btn-outline">Explorar Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: PROMOCIONES DE TEMPORADA -->
+  <section id="promociones" class="section promo-section">
+    <div class="container">
+      <div class="section-title">
+        <span class="tagline">Oportunidades Únicas</span>
+        <h2>Promociones de Temporada</h2>
+        <p>Aprovecha estos descuentos especiales por tiempo limitado. ¡Te mereces este regalo!</p>
+      </div>
+
+      <div class="promo-grid">
+        <!-- Promoción 1 -->
+        <div class="promo-banner-card">
+          <div class="promo-badge">-25% de Descuento</div>
+          <h3>Combo Sensualidad Total</h3>
+          <p>Conjunto de satén suave + Perfume miniatura de regalo para llevar contigo.</p>
+          <div class="price-box">
+            <span class="price-old">$210.000 COP</span>
+            <span class="price-new">$157.500 COP</span>
+          </div>
+          <a href="https://wa.me/571234567895?text=Hola,%20me%20interesa%20la%20promoci%C3%B3n%20Combo%20Sensualidad%20Total" class="btn btn-primary btn-small">Pedir por WhatsApp</a>
+        </div>
+
+        <!-- Promoción 2 -->
+        <div class="promo-banner-card highlight">
+          <div class="promo-badge gold">⭐ Favorito del Mes -30%</div>
+          <h3>Dúo Fragancia Sublime</h3>
+          <p>Perfume Parfume 100ml + Crema perfumada hidratante con destellos de seducción.</p>
+          <div class="price-box">
+            <span class="price-old">$260.000 COP</span>
+            <span class="price-new">$182.000 COP</span>
+          </div>
+          <a href="https://wa.me/571234567895?text=Hola,%20me%20interesa%20la%20promoci%C3%B3n%20D%C3%BAo%20Fragancia%20Sublime" class="btn btn-primary btn-small">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO PRODUCTOS: LENCERÍA & PERFUMERÍA -->
+  <section id="lenceria" class="section products-section container">
+    <div class="section-title">
+      <span class="tagline">Colección Destacada</span>
+      <h2>Lencería & Perfumería Fina</h2>
+      <p>Selecciona tu producto favorito para agregarlo a tu lista de compra.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- Producto 1 -->
+      <article class="product-card">
+        <div class="product-image">
+          <span class="card-badge">Nuevo</span>
+          <img src="https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=600&q=80" alt="Conjunto Encaje">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Lencería</span>
+          <h3>Conjunto Noir Seduction</h3>
+          <p class="product-desc">Encaje de alta suavidad que se adapta perfectamente a tu figura.</p>
+          <div class="product-price">
+            <span class="price">$119.900 COP</span>
+          </div>
+          <label for="cart-toggle" class="btn btn-add-cart">
+            <i class="fas fa-shopping-bag"></i> Seleccionar Compra
+          </label>
+        </div>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product-card">
+        <div class="product-image">
+          <span class="card-badge discount">-20% OFF</span>
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80" alt="Perfume Luxury">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Perfumería</span>
+          <h3>Perfume Élan Velvet 100ml</h3>
+          <p class="product-desc">Notas refrescantes y florales con fondo de vainilla seductora.</p>
+          <div class="product-price">
+            <span class="price-old">$230.000 COP</span>
+            <span class="price">$185.000 COP</span>
+          </div>
+          <label for="cart-toggle" class="btn btn-add-cart">
+            <i class="fas fa-shopping-bag"></i> Seleccionar Compra
+          </label>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1516575150278-77136aed6920?auto=format&fit=crop&w=600&q=80" alt="Bata de Seda">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Lencería</span>
+          <h3>Bata Kimono Sensation</h3>
+          <p class="product-desc">Seda pura táctil de caida ligera, cómoda y elegante.</p>
+          <div class="product-price">
+            <span class="price">$145.000 COP</span>
+          </div>
+          <label for="cart-toggle" class="btn btn-add-cart">
+            <i class="fas fa-shopping-bag"></i> Seleccionar Compra
+          </label>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product-card">
+        <div class="product-image">
+          <span class="card-badge gold">Exclusivo</span>
+          <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80" alt="Perfume Rose Gold">
+        </div>
+        <div class="product-info">
+          <span class="product-category" id="perfumeria">Perfumería</span>
+          <h3>Extracto Rose Gold 50ml</h3>
+          <p class="product-desc">Larga duración con fijación superior para dejar huella donde vayas.</p>
+          <div class="product-price">
+            <span class="price">$198.000 COP</span>
+          </div>
+          <label for="cart-toggle" class="btn btn-add-cart">
+            <i class="fas fa-shopping-bag"></i> Seleccionar Compra
+          </label>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE OPCIONES DE PAGO -->
+  <section id="pagos" class="section payment-section">
+    <div class="container text-center">
+      <div class="section-title">
+        <span class="tagline">Fácil, Rápido y Seguro</span>
+        <h2>Medios de Pago Aceptados</h2>
+        <p>Paga fácilmente a través de tus aplicaciones móviles o transferencias bancarias directas.</p>
+      </div>
+
+      <div class="payment-cards-container">
+        <!-- Nequi -->
+        <div class="payment-card">
+          <div class="payment-icon nequi-bg">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Nequi</h3>
+          <p>Paga de inmediato desde tu celular de forma sencilla y segura.</p>
+          <span class="payment-detail">Transfiere al número de nuestra cuenta oficial.</span>
+        </div>
+
+        <!-- Davivienda -->
+        <div class="payment-card">
+          <div class="payment-icon davivienda-bg">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>Davivienda / Daviplata</h3>
+          <p>Transferencias sin costo desde la App Davivienda o Daviplata.</p>
+          <span class="payment-detail">Confirmación de pago rápida y garantizada.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA CON FRASE MOTIVACIONAL Y WHATSAPP -->
+  <footer class="footer">
+    <div class="container footer-content">
+      
+      <!-- Frase Motivacional de Autoestima & Necesidad -->
+      <div class="footer-quote-box">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <p class="motivational-phrase">
+          "Sentirte bella, deseable y cómoda no es un lujo opcional; <strong>es una necesidad esencial para tu bienestar</strong>. Invertir en tu lencería y tu aroma es la forma más pura de regalarte amor propio, elevar tu seguridad y recordar tu valor todos los días. <span>No esperes un día especial... tú eres la razón para celebrar hoy.</span>"
+        </p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <h4>SEDUCTION | Lencería & Perfumería</h4>
+          <p>Tu tienda de confianza para resaltar tu belleza interior y exterior.</p>
+        </div>
+
+        <!-- Botón Directo de WhatsApp -->
+        <div class="footer-contact">
+          <a href="https://wa.me/571234567895?text=Hola,%20deseo%20asesor%C3%ADa%20para%20comprar%20lencer%C3%ADa%20y%20perfumer%C3%ADa" target="_blank" class="whatsapp-btn-footer">
+            <i class="fab fa-whatsapp"></i> WhatsApp: +57 123 456 7895
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2026 SEDUCTION. Todos los derechos reservados. Diseño Fresco y Elegante.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/571234567895?text=Hola,%20quiero%20más%20información%20sobre%20los%20productos" target="_blank" class="floating-whatsapp" title="Escríbenos a WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
